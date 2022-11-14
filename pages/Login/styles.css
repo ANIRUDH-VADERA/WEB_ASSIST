@@ -1,0 +1,157 @@
+@font-face {
+font-family: GilroyBold;
+src: url("../../font/Gilroy-Bold.ttf");
+}
+
+@font-face {
+font-family: GilroySemiBold;
+src: url("../../font/Gilroy-SemiBold.ttf");
+}
+
+@font-face {
+font-family: GilroyMedium;
+src: url("../../font/Gilroy-Medium.ttf");
+}
+
+@font-face {
+font-family: Gilroy;
+src: url("../../font/Gilroy-Regular.ttf");
+}
+
+@font-face {
+font-family: GilroyExtraBold;
+src: url("../../font/Gilroy-ExtraBold.ttf");
+}
+
+
+.mainLogin{
+  margin: 0;
+}
+
+.login_page {
+    background-color: #131313;
+    width: 400px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_page .main_form {
+  height: 300px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px 50px 20px;
+  background: #1f1f1f;
+  border-radius: 25px;
+}
+
+.login_page .btn1 {
+  -webkit-border-radius: 12;
+  -moz-border-radius: 12;
+  border-radius: 12px;
+  font-family: GilroySemiBold;
+  color: #ffffff;
+  font-size: 20px;
+  background: #6b27f8;
+  padding: 3%;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100% !important;
+  font-size: 16px;
+  margin: 0 !important;
+}
+
+.login_page .btn1:hover{
+  background: #4506c8;
+  text-decoration: none;
+}
+
+.login_page .heading {
+  font-family: GilroySemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  text-align: center; 
+  color: #ffffff;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.login_page .para {
+  font-family: GilroyMedium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.25px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.login_page .form {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.login_page input {
+  width: 95%;
+  background: #2b2b2b;
+  border-radius: 16px;
+  height: 52px;
+  padding-left: 16px;
+  margin-bottom: 12px;
+  font-family: GilroySemiBold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.25px;
+
+  /* Text/Primary */
+
+  color: rgba(255, 255, 255, 0.95);
+  border: none !important;
+}
+
+.login_page input:focus {
+  background: #383838;
+  outline: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.login_page label {
+  font-family: GilroyMedium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 147% */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.25px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="mainLogin">
+    <div class="login_page">
+      <div class="main_form">
+        <h1 class="heading">Login</h1>
+        <p class="para">Login with your Name and registered Password</p>
+        <form class="form">
+          <label for="">Name</label>
+          <input
+            name="username"
+            placeholder="Enter your Name"
+            type="text"
+            class="chrome_ex_username"
+            autocomplete="on"
+          />
+          <label for="">Password</label>
+          <input
+            type="password"
+            autocomplete="on"
+            name="password"
+            class="chrome_ex_pasword"
+            placeholder="Enter your Password"
+          />
+        </form>
+        <button type="submit" class="btn1">Login</button>
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./login.js" async defer></script>
+  </body>
+</html>
