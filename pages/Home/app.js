@@ -16,8 +16,10 @@ if(colorWheel == "false"){
     var border_color = "red";
 }
 else{
-    console.log("HIU2");
-    console.log(colorWheel);
+    var fill_color = document.getElementById("fillcolor");
+    var border_color = document.getElementById("bordercolor");
+    console.log(fill_color);
+    console.log(border_color);
 }
 if(definition == "false"){
     definitionDiv.innerHTML = "";
@@ -42,8 +44,8 @@ else{
                 return res.json();
             })
             .then(data=>{
-                console.log(data)
-                change.innerHTML=data[1].text;
+                console.log(data);
+                change.innerHTML=data[0].text;
             })    
     })
 
@@ -130,6 +132,7 @@ let userlvl;
 let userxtra;
 let button = document.querySelector(".search_button");
 button.addEventListener("click",function(event){
+    event.preventDefault();
     userinput=document.getElementById("userinput");
     let message = userinput.value;
     userlvl=document.getElementById("demo");
@@ -152,9 +155,9 @@ button.addEventListener("click",function(event){
             fill_col : current_fill_color,
             bor_col : current_border_color
         };
+        console.log(msg);
         chrome.tabs.sendMessage(tabs[0].id,msg);
     }
-    event.preventDefault();
 });
 
 
